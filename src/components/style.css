@@ -1,0 +1,79 @@
+/* style.css */
+
+/* Estilos para el contenedor del buscador */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+/* Estilo del input de búsqueda */
+.search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Cambiar el borde y el color del fondo cuando el input está enfocado */
+.search-input:focus {
+    outline: none;
+    border-color: #45a049;
+    background-color: #e8f5e9;
+    box-shadow: 0 4px 8px rgba(72, 179, 60, 0.2);
+}
+
+/* Estilo del placeholder */
+.search-input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Estilos del icono de búsqueda si decides agregarlo */
+.search-input-wrapper {
+    position: relative;
+}
+
+.search-input-wrapper::before {
+    content: "\f002";  /* Código Unicode de FontAwesome para el icono de búsqueda */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4CAF50;
+    font-size: 18px;
+}
+
+/* Estilo para el contenedor de la tabla */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+    background-color: #ddd;
+}
