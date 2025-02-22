@@ -21,7 +21,7 @@ const UsersList = ({ users }) => {
 
     return (
         <div className="container">
-            <h2>Lista de Usuarios</h2>
+            <h2>Lista de Usuarios para QA</h2>
             
             {/* Input de búsqueda */}
             <input
